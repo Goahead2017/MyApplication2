@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="316dp"
+        android:layout_height="301dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/freshman_dialog"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="功能介绍"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/freshman_close"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:text="1.文本框右侧【箭头】查看每一项任务\n具体详情。"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:text="2.右上角的【编辑】，通过勾选进行选\n择性删除（未标识可删除圆圈的则为报\n道必需）。"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:text="3.点击左侧【空方框】勾选该项即为完\n成，再次单击即可恢复。"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:text="4.右下角【加号】图样可自定义添加新待办。"/>
+
+</RelativeLayout>

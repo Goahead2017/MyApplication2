@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+   <com.mredrock.cyxbs.freshman.myapplication.OurTraining.RoundRectImageView
+       android:id="@+id/iv"
+       android:layout_width="180dp"
+       android:layout_height="100dp"
+       android:scaleType="fitXY"
+       tools:ignore="ContentDescription" />
+
+       <ImageView
+           android:id="@+id/play"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/freshman_play_click"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="40dp"
+           tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/train_text"
+        android:layout_below="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textSize="14sp"
+        android:textColor="#A5000000"
+        />
+
+</RelativeLayout>

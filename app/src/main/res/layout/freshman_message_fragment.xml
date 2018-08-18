@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginTop="37dp"
+        android:text="军训图片"/>
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/v"
+        android:background="#FFFFFF"/>
+
+    <com.mredrock.cyxbs.freshman.myapplication.OurTraining.BannerView2
+        android:id="@+id/bannerView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:clipChildren="false">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_recommend_viewPager2"
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false" />
+    </com.mredrock.cyxbs.freshman.myapplication.OurTraining.BannerView2>
+
+    <LinearLayout
+        android:id="@+id/fragment_recommend_banner_indicator"
+        android:layout_width="280dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/bannerView2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#66000000"
+        >
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:text="汇报表演"
+            android:layout_marginStart="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_below="@+id/v"
+        android:layout_marginTop="40dp"
+        android:text="军训视频"/>
+
+    <com.mredrock.cyxbs.freshman.myapplication.OurTraining.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:clipChildren="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/v"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_recommend_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/fragment_recommend_banner_indicator"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_alignParentLeft="true" />-->
+    </com.mredrock.cyxbs.freshman.myapplication.OurTraining.BannerView>
+
+</RelativeLayout>

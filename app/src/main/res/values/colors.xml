@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text0">#333333</color>
+    <color name="text1">#999999</color>
+    <color name="blue_miaobian">#8CC2FF</color>
+    <color name="pink_miaobian">#FF8CC8</color>
+    <color name="blue_text">#70CEFE</color>
+    <color name="pink_text">#FF8CC8</color>
+    <color name="blue_miaobian2">#00A9FF</color>
+    <color name="pink_miaobian2">#FF2B98</color>
+    <color name="dash_line">#4C0083FF</color>
+    <color name="blue_num">#A50083FE</color>
+    <color name="rect_one">#C59AFF</color>
+    <color name="rect_two">#FF9DAF</color>
+    <color name="rect_three">#9DB4FF</color>
+    <color name="people">#CCFF5A5A</color>
+    <color name="down_text">#CC0083FF</color>
+    <color name="view">#54ACFF</color>
+</resources>

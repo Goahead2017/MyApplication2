@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/freshman_top"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/can_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/freshman_back"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学生食堂"
+        android:textColor="#FEFEFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_image">
+
+    </ScrollView>
+
+</RelativeLayout>

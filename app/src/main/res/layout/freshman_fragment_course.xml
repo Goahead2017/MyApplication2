@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/freshman_sex_bottom_2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/freshman_sex_bottom_3"
+        android:scaleType="fitXY"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="4dp"
+        android:layout_height="9dp"
+        android:src="@drawable/freshman_course_1"
+        android:layout_marginTop="32.5dp"
+        android:layout_marginLeft="40dp"
+        tools:ignore="ContentDescription"
+        android:layout_marginStart="40dp" />
+
+    <ImageView
+        android:layout_width="4dp"
+        android:layout_height="12dp"
+        android:src="@drawable/freshman_course_2"
+        android:layout_marginTop="37.5dp"
+        android:layout_marginLeft="40dp"
+        tools:ignore="ContentDescription"
+        android:layout_marginStart="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:textSize="15sp"
+        android:textColor="#9954ACFF"
+        android:text="2017-2018学年第二学期挂科情况"/>
+
+    <com.mredrock.cyxbs.freshman.myapplication.DataSecret.DIYView.CourseDrawView
+        android:id="@+id/courseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

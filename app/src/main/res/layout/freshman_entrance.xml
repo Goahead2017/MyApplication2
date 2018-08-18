@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    >
+    <ImageView
+        android:id="@+id/top_image"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/freshman_top"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/freshman_back"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="入学必备"
+        android:textColor="#FEFEFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="32dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/freshman_detailed"
+        android:layout_toRightOf="@+id/enter"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="34dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/top_image"
+        />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/layout"-->
+        <!--android:layout_below="@+id/top_image"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</RelativeLayout>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatButton"
+        android:layout_height="61dp"
+        android:layout_width="61dp"
+        android:src="@drawable/freshman_add_black_28dp"
+        app:backgroundTint="#778FFA"
+        app:elevation="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+         />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/freshman_bottom"
+       >
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="3"
+            android:textColor="#333333"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textSize="14sp"
+            android:hint="请输入待办事项（不超过14个字）"
+            android:textCursorDrawable="@drawable/freshman_color_cursor"
+            android:singleLine="true"
+            android:maxLength="14"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/freshman_edittext"
+            android:layout_marginStart="16dp"
+            android:inputType="textPhonetic"
+            android:paddingStart="12dp"
+            tools:ignore="RtlSymmetry" />
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/freshman_button"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="22dp"
+            android:text="添加"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>
